@@ -1,5 +1,5 @@
 ---
-
+import '../styles/index.css';
 ---
 
 <html lang="en">
@@ -10,27 +10,25 @@
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
 		</head>
+
 	<body>
 	
-		<h1>Find a Pokemon TCG card or set</h1>
+		<h1 id='title'>Find a Pokemon TCG card or set</h1>
 
 		<form id="searchForm">
-			<label for="search">Search for a card or set:</label>
-			<input type="text" id="search" name="search" />
-			<button type="submit">Search</button>
+			<select name="Sets" id="pkmnSets">
+				<option value="" disabled selected hidden>Please Select a Set (Newest to Oldest)</option>
+				<option value="None">None</option>
+			</select>
 		</form>
 
 		<section id='container'>
-
-			<ul id='card'>
-				<li id='name'><h2></h2></li>
-				<li id='pkmnIMG'><img src="" alt="" /></li>
-				<li id='artist'></li>
-			</ul>
 
 		</section>
 		
 
 		<script src="../scripts/pokemontcg.js"></script>
+
 	</body>
+
 </html>
