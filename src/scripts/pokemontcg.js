@@ -1,7 +1,5 @@
 import pokemon from 'pokemontcgsdk';
 
-pokemon.configure({ apiKey: 'bea89b29-a96f-4bf0-ab54-59373caedba4' });
-
 const container = document.querySelector('#container');
 const pkmnSets = document.querySelector('#pkmnSets');
 
