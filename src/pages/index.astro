@@ -1,0 +1,36 @@
+---
+
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+		</head>
+	<body>
+	
+		<h1>Find a Pokemon TCG card or set</h1>
+
+		<form id="searchForm">
+			<label for="search">Search for a card or set:</label>
+			<input type="text" id="search" name="search" />
+			<button type="submit">Search</button>
+		</form>
+
+		<section id='container'>
+
+			<ul id='card'>
+				<li id='name'><h2></h2></li>
+				<li id='pkmnIMG'><img src="" alt="" /></li>
+				<li id='artist'></li>
+			</ul>
+
+		</section>
+		
+
+		<script src="../scripts/pokemontcg.js"></script>
+	</body>
+</html>
